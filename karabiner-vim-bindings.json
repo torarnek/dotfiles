@@ -2,7 +2,7 @@
   "title": "Tor Arne",
   "rules": [
     {
-      "description": "Vim help - Capslock to escape",
+      "description": "Vim help - Caps_lock to escape",
       "manipulators": [
         {
           "type": "basic",
@@ -92,6 +92,30 @@
           "to": [
             {
               "key_code": "f",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Vim help - Map command-g to control-g",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {"mandatory": ["left_command"]}
+          },
+          "to": [
+            {
+              "key_code": "g",
               "modifiers": ["left_control"]
             }
           ],
