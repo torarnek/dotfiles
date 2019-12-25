@@ -10,6 +10,7 @@ brew "node"
 brew "telnet"
 brew "vim"
 brew "prettier"
+brew "ripgrep
 cask "alfred"
 cask "deluge"
 cask "google-chrome"

@@ -1,7 +1,7 @@
 
 call plug#begin('~/.vim/plugged')
 Plug 'vim-syntastic/syntastic'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdtree'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -23,6 +23,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 set rtp+=/usr/local/opt/fzf
-nnoremap <C-p> :Files<Cr>
-nnoremap <C-b> :Buffers<Cr>
+nnoremap <C-f> :Files<Cr>
+nnoremap <C-e> :Buffers<Cr>
 nnoremap <C-g> :Rg<Cr>
+nnoremap <C-p> :Prettier<Cr>
+
