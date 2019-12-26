@@ -2,19 +2,19 @@
   "title": "Tor Arne",
   "rules": [
     {
-      "description": "Vim help - Caps_lock to escape",
+      "description": "Vim: Left-command alone to escape",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "caps_lock",
+            "key_code": "left_command",
             "modifiers": {
               "optional": ["any"]
             }
           },
           "to": [
             {
-              "key_code": "left_control",
+              "key_code": "left_command",
               "lazy": true
             }
           ],
@@ -33,7 +33,38 @@
       ]
     },
     {
-      "description": "Vim help - Map command-p to control-p",
+      "description": "Vim: Right_command alone to escape",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_command",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Vim: Map command-p to control-p",
       "manipulators": [
         {
           "type": "basic",
@@ -57,7 +88,7 @@
       ]
     },
     {
-      "description": "Vim help - Map command-e to control-e",
+      "description": "Vim: Map command-e to control-e",
       "manipulators": [
         {
           "type": "basic",
@@ -81,7 +112,7 @@
       ]
     },
     {
-      "description": "Vim help - Map command-f to control-f",
+      "description": "Vim: Map command-f to control-f",
       "manipulators": [
         {
           "type": "basic",
@@ -105,7 +136,7 @@
       ]
     },
     {
-      "description": "Vim help - Map command-g to control-g",
+      "description": "Vim: Map command-g to control-g",
       "manipulators": [
         {
           "type": "basic",
@@ -116,6 +147,102 @@
           "to": [
             {
               "key_code": "g",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Vim: Map command-h to control-h",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {"mandatory": ["left_command"]}
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Vim: Map command-j to control-j",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {"mandatory": ["left_command"]}
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Vim: Map command-k to control-k",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {"mandatory": ["left_command"]}
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Vim: Map command-b to control-b",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {"mandatory": ["left_command"]}
+          },
+          "to": [
+            {
+              "key_code": "b",
               "modifiers": ["left_control"]
             }
           ],
