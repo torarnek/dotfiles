@@ -1,5 +1,6 @@
 
 call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-sensible'
 Plug 'vim-syntastic/syntastic'
 Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdtree'

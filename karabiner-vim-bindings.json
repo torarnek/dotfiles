@@ -26,7 +26,10 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
             }
           ]
         }
@@ -57,7 +60,10 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
             }
           ]
         }
@@ -81,7 +87,10 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
             }
           ]
         }
@@ -105,7 +114,10 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
             }
           ]
         }
@@ -129,7 +141,10 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
             }
           ]
         }
@@ -153,7 +168,10 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
             }
           ]
         }
@@ -177,7 +195,10 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
             }
           ]
         }
@@ -201,7 +222,10 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
             }
           ]
         }
@@ -225,7 +249,10 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
             }
           ]
         }
@@ -249,7 +276,10 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^com\\.googlecode\\.iterm2$"]
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
             }
           ]
         }
