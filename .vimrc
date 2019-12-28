@@ -26,4 +26,5 @@ nnoremap <C-f> :Rg<Cr>
 nnoremap <C-p> :Prettier<Cr>
 nnoremap <C-h> :History<Cr>
 nnoremap <C-n> :NERDTreeToggle<CR>
-
+nnoremap <C-j> <C-e>
+nnoremap <C-k> <C-y>
