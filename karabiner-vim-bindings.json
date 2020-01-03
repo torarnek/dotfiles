@@ -284,6 +284,60 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Vim: Map command-tilde to control-tilde",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {"mandatory": ["left_command"]}
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Vim: Map command-r to control-r",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {"mandatory": ["left_command"]}
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": ["left_control"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.jetbrains\\.intellij$"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
